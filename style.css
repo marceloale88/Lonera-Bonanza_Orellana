@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+
+/*Esta es la barra de navegacion*/
+.nav_navegacion {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas: "logo index trabajos presupuesto contacto";
+  justify-content: space-evenly;
+  align-items:center;
+  position: fixed;
+  top: 0;
+  padding: 1px 1px 1px 1px;
+  margin: 0,5px 2px 2px 2px;
+  width: 100%;
+  background-image:url(./img/lonas/fondoparalax.jpg);
+                }
+
+.logo{grid-area: logo;}
+.index{grid-area: index;}
+.trabajos{grid-area: trabajos;}
+.presupuesto{grid-area:presupuesto ;}
+.contacto{grid-area: contacto;}
+            
+                
+.header_navegacion a {           
+  text-decoration: none;
+  color:green;
+  font-weight: bold;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+                  }
+
+/* para transmision*/
+   .nav_navegacion .index:hover {
+              transform:scaleZ(1); 
+              transition: all 1s;   
+           }
+    
+  
+
+
+/*Esta es la seccion footer y redes sociales*/
+.redes a {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-size: 25px;
+  }
+
+
+
+
+.redes i {
+  color: black;
+  font-size: 25px;
+  margin: 20px 0px 20px 0px;
+  
+         }      
+
+footer {
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  background-image:url(./img/lonas/fondoparalax.jpg);
+  margin: 25px 10px 0px 0px;
+  
+}
+
+.section2_index {
+  display:grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas:". iframe_index"
+  ". redes";
+  justify-content: center;
+  align-items: center;
+  justify-items: end;
+                }
+
+.iframe_index{grid-area: iframe_index;}
+.redes{grid-area: redes;}
+
+
+
+
+
+
+/*Esta es la seccion index o Inicio*/
+#titulo_index {
+  color: rgb(266, 0, 0);
+  font-style: normal;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 80px;
+  margin: 75px 20px 20px 20px;
+}
+
+.main_index  {
+            color:green;
+            text-shadow: greenyellow;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-size: 20px;
+             }
+
+  .main_index a {
+    text-decoration: none;
+    list-style: none;
+    color:green;
+    text-shadow: greenyellow;
+    color:green;
+   text-shadow: greenyellow;
+                }
+
+ 
+
+
+
+
+
+/*Esta es la seccion trabajos*/
+
+.nav_trabajos {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas: "cerramientos transporte toldos cobertores inflables carpas revestimientos reparaciones carteles";
+  justify-content: space-evenly;
+  align-items:center;
+  position: fixed;
+  margin: 28px 3px 1px 1px;
+  width: 100%;
+  background-image:url(./img/lonas/fondoparalax.jpg);
+                }
+
+.cerramientos{grid-area: cerramientos;}
+.transporte{grid-area: transporte;}
+.toldos{grid-area: toldos;}
+.cobertores{grid-area: cobertores;}
+.inflables{grid-area: inflables;}
+.carpas{grid-area: carpas;}
+.revestimientos{grid-area: revestimientos;}
+.reparaciones{grid-area: reparaciones;}
+.carteles{grid-area: carteles;}
+
+
+
+
+.nav_trabajos a {           
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+                  }
+
+
+
+.subtitulo {
+  color:red;
+  font-size: 35px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 10px 10px 10px;
+}
+
+.section_trabajos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  margin: 50px 30px 10px 0px;
+}
+
+.div_trabajos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+ 
+}
+
+
+
+
+/*Esta es la seccion presupuesto*/
+
+#titulo_presupuesto {
+  color: rgb(266, 0, 0);
+  font-style: normal;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+  margin: 90px 20px 20px 20px;
+}
+
+.div_presupuesto h2 {
+  color: blue;
+  font-size: 35px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+   
+}
+
+.div_presupuesto img {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+/*Esta es la seccion contacto*/
+
+#titulo_contacto {
+  color: rgb(266, 0, 0);
+  font-style: normal;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+  margin: 120px 20px 10px 10px;
+}
+
+.div_contacto  li a{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+  padding: 50px 60px 50px 20px;
+}
+
+.body_contacto{
+      height: 700px;
+   background-attachment: fixed;
+    background-position: center;
+  background-repeat: no-repeat;
+       background-size:cover;
+                }
+
+
+.section_contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px 0px 20px 30px ;
+}
+
+.article_contacto ul li {
+  text-decoration: none;
+  color:black;
+  list-style: none;
+  font-size: 25px;
+  margin: 4px 2px 4px 250px ;
+}
+
+.article_contacto  {
+  background-image: url(./img/lonas/fondoparalax5.jpg);
+  border: 2px solid black;
+  text-align: left;
+  margin: 30px 30px 40px 30px;
+  padding: 10px 10px 10px 30px;
+  width: 50%;
+  border-radius: 60px 60px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+
+
+
+
+
+/*media Queries*/
+
+@media only screen  and 
+  (max-width : 576px) 
+/*Barra Navegacion e index Mobile*/
+{  .nav_navegacion {
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-areas: "logo ""index ""trabajos ""presupuesto ""contacto";
+  justify-content: space-around;
+  justify-items: center;
+  }
+   .section2_index {
+    justify-content: space-around;
+    justify-items: center;
+    justify-content: center;
+    }
+    .footer {
+      justify-content: space-around;
+      justify-items: center;
+      justify-content:center;
+      }
+}
+
+  /*Presupuestos Mobile*/
+
+  .redes {
+    justify-content: space-around;
+    justify-items: center;
+    justify-content:center;
+    }
+
+
